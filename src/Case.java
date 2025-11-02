@@ -2,16 +2,12 @@ public class Case {
 
     private char symbole;
 
-    public Case(char symbole) {
-        this.symbole = symbole;
+    public Case() {
+        this.symbole = ' ';
     }
 
     public boolean estVide() {
-        if(symbole == ' ') {
-            return true;
-        } else {
-            return false;
-        }
+        return symbole == ' ';
     }
 
     public void setSymbole(char symbole) {
@@ -21,5 +17,4 @@ public class Case {
     public char getSymbole() {
         return symbole;
     }
-
 }
