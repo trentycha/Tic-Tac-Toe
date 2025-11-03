@@ -16,6 +16,18 @@ public class Jeu {
         joueurCourant = joueurUn;
     }
 
+    public Joueur getJoueurCourant() {
+        return joueurCourant;
+    }
+
+    public Plateau getPlateau() {
+        return plateau;
+    }
+
+    public void changerTour() {
+        joueurCourant = (joueurCourant == joueurUn) ? joueurDeux : joueurUn;
+    }
+
     public void jouer() {
         boolean jeuFini = false;
 
@@ -44,10 +56,6 @@ public class Jeu {
         }
 
         scanner.close();
-    }
-
-    private void changerTour() {
-        joueurCourant = (joueurCourant == joueurUn) ? joueurDeux : joueurUn;
     }
 
     private void afficherPlateau() {

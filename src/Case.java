@@ -10,11 +10,12 @@ public class Case {
         return symbole == ' ';
     }
 
+    public char getSymbole() {
+        return symbole;
+    }
+
     public void setSymbole(char symbole) {
         this.symbole = symbole;
     }
 
-    public char getSymbole() {
-        return symbole;
-    }
 }
